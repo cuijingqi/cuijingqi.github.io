@@ -35,6 +35,10 @@
     
       <category term="a" scheme="http://coderdog.xyz/tags/a/"/>
     
+      <category term="b" scheme="http://coderdog.xyz/tags/b/"/>
+    
+      <category term="c" scheme="http://coderdog.xyz/tags/c/"/>
+    
   </entry>
   
 </feed>
