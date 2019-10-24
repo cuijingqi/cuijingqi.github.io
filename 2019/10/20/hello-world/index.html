@@ -1,0 +1,609 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<script src="//cdn.bootcss.com/pace/1.0.2/pace.min.js"></script>
+<link href="//cdn.bootcss.com/pace/1.0.2/themes/pink/pace-theme-flash.css" rel="stylesheet">
+<style>
+    .pace .pace-progress {
+        background: #1E92FB; /*进度条颜色*/
+        height: 2px;
+    }
+    .pace .pace-progress-inner {
+         box-shadow: 0 0 10px #1E92FB, 0 0 5px     #1E92FB; /*阴影颜色*/
+    }
+    .pace .pace-activity {
+        border-top-color: #1E92FB;    /*上边框颜色*/
+        border-left-color: #1E92FB;    /*左边框颜色*/
+    }
+</style>
+<meta name="theme-color" content="#222">
+<meta name="generator" content="Hexo 4.0.0">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=7.4.2">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png?v=7.4.2">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png?v=7.4.2">
+  <link rel="mask-icon" href="/images/logo.svg?v=7.4.2" color="#222">
+  <link rel="alternate" href="/atom.xml" title="Coder 狗窝" type="application/atom+xml">
+
+<link rel="stylesheet" href="/css/main.css?v=7.4.2">
+
+
+<link rel="stylesheet" href="/lib/font-awesome/css/font-awesome.min.css?v=4.7.0">
+  <link rel="stylesheet" href="//cdn.jsdelivr.net/gh/fancyapps/fancybox@3/dist/jquery.fancybox.min.css">
+
+
+<script id="hexo-configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Mist',
+    version: '7.4.2',
+    exturl: false,
+    sidebar: {"position":"right","display":"post","offset":12,"onmobile":false},
+    copycode: {"enable":true,"show_result":true,"style":null},
+    back2top: {"enable":true,"sidebar":false,"scrollpercent":false},
+    bookmark: {"enable":false,"color":"#222","save":"auto"},
+    fancybox: true,
+    mediumzoom: false,
+    lazyload: false,
+    pangu: false,
+    algolia: {
+      appID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    },
+    localsearch: {"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},
+    path: './public/search.xml',
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    translation: {
+      copy_button: '复制',
+      copy_success: '复制成功',
+      copy_failure: '复制失败'
+    },
+    sidebarPadding: 40
+  };
+</script>
+
+  <meta name="description" content="Welcome to my blog, enter password to read.">
+<meta name="keywords" content="a">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Hello World">
+<meta property="og:url" content="http:&#x2F;&#x2F;coderdog.xyz&#x2F;2019&#x2F;10&#x2F;20&#x2F;hello-world&#x2F;index.html">
+<meta property="og:site_name" content="Coder 狗窝">
+<meta property="og:description" content="Welcome to my blog, enter password to read.">
+<meta property="og:locale" content="zh-CN">
+<meta property="og:updated_time" content="2019-10-20T09:54:36.419Z">
+<meta name="twitter:card" content="summary">
+
+<link rel="canonical" href="http://coderdog.xyz/2019/10/20/hello-world/">
+
+
+<script id="page-configurations">
+  // https://hexo.io/docs/variables.html
+  CONFIG.page = {
+    sidebar: "",
+    isHome: false,
+    isPost: true,
+    isPage: false,
+    isArchive: false
+  };
+</script>
+
+  <title>Hello World | Coder 狗窝</title>
+  
+
+
+  <script>
+    var _hmt = _hmt || [];
+    (function() {
+      var hm = document.createElement("script");
+      hm.src = "https://hm.baidu.com/hm.js?582f5e6c95e232e57bfb7b7294027d9f";
+      var s = document.getElementsByTagName("script")[0];
+      s.parentNode.insertBefore(hm, s);
+    })();
+  </script>
+
+
+
+
+
+
+  <noscript>
+  <style>
+  .use-motion .brand,
+  .use-motion .menu-item,
+  .sidebar-inner,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-header { opacity: initial; }
+
+  .use-motion .site-title,
+  .use-motion .site-subtitle {
+    opacity: initial;
+    top: initial;
+  }
+
+  .use-motion .logo-line-before i { left: initial; }
+  .use-motion .logo-line-after i { right: initial; }
+  </style>
+</noscript>
+
+  <!-- 页面点击小红心 -->
+	<script type="text/javascript" src="/js/love.js"></script>
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage">
+	
+ <div class="container use-motion">
+    <div class="headband"></div>
+	<a href="https://github.com/cuijingqi" target="_blank" rel="noopener" class="github-corner" aria-label="View source on GitHub"><svg width="80" height="80" viewBox="0 0 250 250" style="fill:#64CEAA; color:#fff; position: absolute; top: 0; border: 0; right: 0;" aria-hidden="true"><path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path><path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2" fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path><path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z" fill="currentColor" class="octo-body"></path></svg></a><style>.github-corner:hover .octo-arm{animation:octocat-wave 560ms ease-in-out}@keyframes octocat-wave{0%,100%{transform:rotate(0)}20%,60%{transform:rotate(-25deg)}40%,80%{transform:rotate(10deg)}}@media (max-width:500px){.github-corner:hover .octo-arm{animation:none}.github-corner .octo-arm{animation:octocat-wave 560ms ease-in-out}}</style>
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-meta">
+
+    <div>
+      <a href="/" class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">Coder 狗窝</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+        <p class="site-subtitle">技术博客</p>
+  </div>
+
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="切换导航栏">
+      <span class="toggle-line toggle-line-first"></span>
+      <span class="toggle-line toggle-line-middle"></span>
+      <span class="toggle-line toggle-line-last"></span>
+    </div>
+  </div>
+</div>
+
+
+<nav class="site-nav">
+  
+  <ul id="menu" class="menu">
+        <li class="menu-item menu-item-home">
+
+    <a href="/" rel="section"><i class="fa fa-fw fa-home"></i>首页</a>
+
+  </li>
+        <li class="menu-item menu-item-tags">
+
+    <a href="/tags/" rel="section"><i class="fa fa-fw fa-tags"></i>标签<span class="badge">1</span></a>
+
+  </li>
+        <li class="menu-item menu-item-categories">
+
+    <a href="/categories/" rel="section"><i class="fa fa-fw fa-th"></i>分类<span class="badge">0</span></a>
+
+  </li>
+        <li class="menu-item menu-item-archives">
+
+    <a href="/archives/" rel="section"><i class="fa fa-fw fa-archive"></i>归档<span class="badge">1</span></a>
+
+  </li>
+        <li class="menu-item menu-item-commonweal">
+
+    <a href="/404/" rel="section"><i class="fa fa-fw fa-heartbeat"></i>公益 404</a>
+
+  </li>
+      <li class="menu-item menu-item-search">
+        <a role="button" class="popup-trigger"><i class="fa fa-search fa-fw"></i>搜索
+        </a>
+      </li>
+  </ul>
+
+</nav>
+  <div class="site-search">
+    <div class="popup search-popup">
+    <div class="search-header">
+  <span class="search-icon">
+    <i class="fa fa-search"></i>
+  </span>
+  <div class="search-input-container">
+    <input autocomplete="off" autocorrect="off" autocapitalize="none"
+           placeholder="搜索..." spellcheck="false"
+           type="text" id="search-input">
+  </div>
+  <span class="popup-btn-close">
+    <i class="fa fa-times-circle"></i>
+  </span>
+</div>
+<div id="search-result"></div>
+
+</div>
+<div class="search-pop-overlay"></div>
+
+  </div>
+</div>
+    </header>
+
+    
+  <div class="back-to-top">
+    <i class="fa fa-arrow-up"></i>
+    <span>0%</span>
+  </div>
+
+
+    <main class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          
+
+          <div class="content">
+            
+
+  <div class="posts-expand">
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block " lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://coderdog.xyz/2019/10/20/hello-world/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.jpg">
+      <meta itemprop="name" content="崔靖奇">
+      <meta itemprop="description" content="在你还年轻的时候，你的选择没有对错之分，所有的选择都是对的，对于选择的结果，只是好与更好的差别。">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Coder 狗窝">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          Hello World
+        </h1>
+
+        <div class="post-meta">
+			
+				<i class="fa fa-thumb-tack"></i>
+				<font color=FF5733>置顶</font>
+				<span class="post-meta-divider">|</span>
+			
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2019-10-20 17:54:36" itemprop="dateCreated datePublished" datetime="2019-10-20T17:54:36+08:00">2019-10-20</time>
+            </span>
+
+          
+            <span class="post-meta-item" title="阅读次数" id="busuanzi_container_page_pv" style="display: none;">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-eye"></i>
+              </span>
+              <span class="post-meta-item-text">阅读次数：</span>
+              <span id="busuanzi_value_page_pv"></span>
+            </span>
+  
+  <span class="post-meta-item">
+    
+      <span class="post-meta-item-icon">
+        <i class="fa fa-comment-o"></i>
+      </span>
+      <span class="post-meta-item-text">Valine：</span>
+    
+    <a title="valine" href="/2019/10/20/hello-world/#comments" itemprop="discussionUrl">
+      <span class="post-comments-count valine-comment-count" data-xid="/2019/10/20/hello-world/" itemprop="commentCount"></span>
+    </a>
+  </span>
+  
+  <br>
+            <span class="post-meta-item" title="本文字数">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-file-word-o"></i>
+              </span>
+                <span class="post-meta-item-text">本文字数：</span>
+              <span>357</span>
+            </span>
+            <span class="post-meta-item" title="阅读时长">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-clock-o"></i>
+              </span>
+                <span class="post-meta-item-text">阅读时长 &asymp;</span>
+              <span>1 分钟</span>
+            </span>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+        <div id="hexo-blog-encrypt" data-wpm="Oh, this is an invalid password. Check and try again, please." data-whm="OOPS, these decrypted content may changed, but you can still have a look.">
+  <div class="hbe-input-container">
+  <input type="password" id="hbePass" placeholder="Welcome to my blog, enter password to read." />
+    <label for="hbePass">Welcome to my blog, enter password to read.</label>
+    <div class="bottom-line"></div>
+  </div>
+  <script id="hbeData" type="hbeData" data-hmacdigest="6bd6366359c79881e86a257222de76f62235560e673903dd09e5e80971c7b2a4">bc9653f16655635c85f4573ad46da11f4d88d394f319a501d1212b083d660a574c84b917e6d7275ee446fd04c951aeea6ec47e8c337bff0c80cc4ccf863d3597314e8d880a293ca4ba2316b263fb6a012af63cbd10f88899e60c635b3115acad0dcf6a7707e3a9a76b47f651860d9e925d48fb12b5eb04d5977fb5aa8be00f758fba634ce74b60872349258d7a4fc2d48f03392db693554c9fdc475b8b8bcf484cbf2338584cd0d084bbc8735c54f3496c1e440aec7a9ebd8778143bdfa015a9a6e726fa0b84dbe9e951c64d6fd492908c236040c5b0efcee8e01418d9bce657a1ec247a48a0f4bd17f9161e9b0670d1a2d3e59154ffcb9d0c749c650345358f866f000357a43b35bd6a3494bce11824f50c492037aacb5fcfc4cd0f12654e70c054ce5c895d0f2f277cca8e6af2ebeb6ff59404d5f2ee7a65295663f4c108cba58a1cc16ea395c7fcb73b8bd876e36ecc29346504b37204b2b2907fe799180cc47c81af7318256280a1af98b9e61590644a7582cd31d943e9691e565c29b02fd79987799517bfa1c06043c5f01fae0141b91ea4d6f7e688540885031c3750d41b4f232e53f4a698dc24452c8a03675afadb7ba1fe19e338c249ee70cd1fa81bd648817be618e291bea0fc8cfafefe498dae7fbeac5b4984396c226ebf1d90e08edf0eba44d2893498d56dd1527d38f6897a042a01997bd1dc729e8b3bab584c408d1f60a8a8129f5bdb447a30ea6085649230af1865f81e3bb076d4b7773b82a5907698b6e04ae25d6bd64661d60d901d99b897b5a4c133e3dcb44c9bb686f82bece5a3d390bd7cfd958835767db1a3fadff574adf420e782f5fb7a5e72a90e1ea00cf921ef6984e936e8ed0cbe2ad2144e1c4de8d08d2e4e888c297808960883e2d7f59fb0dba893abd5b37ef4874c52af36028813aa5b2088b7045b2a28b69026cce1a81230b326a2246c47cad6b08fb1c38f4b65e4fe8675d027619122b54d3c279705dc2dbadaecc711822e3be0c67ca25e33b4eea54a98b8bdd26858ed65b512627ad3a8a3b386aeeeb2fe5d8ec2b6b92e88319b6cd28119635415519019720cd4a20bf16d6dcdc21cffd03ceef93d93621b8474f31fbc9eaa5b1b11c7d0a58140c88c381425ec20fb70efd35de47ed9ac15f3c2384f6e308145a40332917a15d65b607bc69bf12b36962d1e1b2620b02f5a1d4c199327b8693acb4cf45e09e9716bedb93631ba3c417cdc5763a35889991bca5ae2aff2cc65e8d91d6e9a0d647b0bb18a929fa38f2c6c0828c5e8f30489bd755e8727b8eba3aff24ae1859a79cc8a295641c3dbc11aa85cd2539e715764e0cff2f9d43a843ceebfdbf671f263d66f0843e2954443ff32e6abff073fcec95e59a7e6c965d18d7cb6b8e52c70bfc5fa8a7ac196b1609912efffb24d14648c228316e11488b5bb2933835dc3c5fbed92710501b05d379a1109699a59a25b7abb93f988bc10847f8d884527358c9de443d18e10e8f60fd8c1e88a08b55fac9457f76f4d2d5a343a6a7349f7bcd1041104fa8d4f54b0888e03c5b7412f25c5b1c8a2c561f335656166ed312976b1cee58bad1af5399fc7b7cbb6c521eb1fd7c48ce5db8b8563bdc8a0b1b8f6f1592a0ea680b0c5466a4461d15b5f2c3b8d72117e4f7915736f18b984e53f9807dc2ad08cf29bdda4107168e04ed4afb471ddbd1457f5208fb96af72aab3995e365c8ec65bcc1bf74bb0ff9931c487f08c61199ec749db450558224dd4b6d3f298eab0a8f9900fca87aacbcbc15d14f3c05a16a79f0e0eea1dff4b8bb2bedcd022845703d2c80dba8402b9797cfb3121f5d2e93fe9f0ce462cc16eec40b873524d8e878eecacc02649a49ba02a0ec9cc5dfcb4a7945825391733b40cde85434af53054971b096e5510a09a1d9555a1e6cd7b8b9249eaae49dcc5b3de6223094f9e9f0a271e3d3fcc2c6c7dc8ae71bc314955eff3bc5891b8916d1ab755bcf3dbf7bda923b1e063cb8553fb5bf4e406527d3fc13a3d006425f96eadf7e4b4d02ae3d71574724cc7414fc9c274928b68750dc4f43e7b82f98e773cf3a9867d51e122725e612fe01238b80094f2a10f749c2da63faf889b2130fd071ff461839078dae86f4da696d8085681f435dcc73d99cb5a737f2337cea69a69b4ea7f981e9ad6fc8a76546d8645caf7f767b8981a66b136a52f8527f62c9348f18304704b6a71b891fd45d2984b045b84cfd7e7174e536aedb1c45e719988ff8714501f48949fec9260419f0fcec4cbca7b73c08b8212321abab652d0b842266fa1a4b24405e1dda82d57d73d1e03b615b7bd5b1bfcbc2eec8131e9f4334be266ba362b986ba5a93daf6cce3f769a72ddc581c4d403b8159fd353ded14e18402abbd6e9962a6f417cf3354159313cddf93a0c3e540b95d0392628c951261c6c4c5b6e133fd2b758607ba5aebbf8bb5418b4af08a41727e3eb48acefc52cb0beddb34297d27e5562d2f4ba83ade4119a1c87b90421f8465c855e7c9334e661fcf3650f2c3ad0cf36cea1baa0d7df0d31a8ef43709e73503cbaa5ef573e45d04f1e36f6c133e964069e45b3ca3ad9df7a196e24edf9d1af82746db21e841ceb6cec37ce9fa9b6f40560720c50659b96d056dda475a65cf5b63e6bf59f346da5738d82210cc8e9e7a9f75f10f0091976fed1dae916e414f82795866ebed9aa95a092b68b843cbb435ea78a8b80e3fe6792ccf7f129e8e440be91120d6c0d8e08d7d75d470b06faaef48d8badc3166684550e1d6e1a09cd4d53ebf0db2e77074ab11b2cbc1de534595128523c4fbd587e1fc9f6fbb1ae15512f918a2fec6ca7b9b5e50950b0a32c470ce18746e4cdb4c743f2fefda04b750d6dbbea2d67bd89acc53bbddc25b8fb715ac48dfd9b3bd3611a92a0f441d0eb68ab559429bcda722e0444bd40c83fb188726ec9fcfaed2fcb363defc37c55b26d651ab0b9edf49b69faf02f8dbe98bd5dc1f5a74b7eda845936755600aaebe3dbd72fc4ae626aef7f112734ed0e3151d9a81f51695f68bc7bdac10f347942ee3fa742f833e46db465c41b9c64bdce732853554ab3eba7ec845eecfa9cd3ae96f3048a0e5349bdd900f3612c91c5088a460f0aaecaea44bba76c9f93730d2542ce7fc85a4324ead2e9c79a7141baaa4959f787fd3f99d067f4867fffb7daf8503493adaedc5ae8eb0b6392eb780599a6b60996e6bb6ab9afe43a8374c467c36f6b0d76d64068c762d7eeb9b532a9683b3f2695039ac0fb9898fd421cf51c369b63bb35b3a275e5d0b801262bd7d7799c0e300891994a01f1262674cc49f980008fbc25fb0d3154989e9e2a575f9af9084ce62927bed1d134338c2adbe9b81e408ee52e00b8c9e71290a128c4a250b8dbbd5406841330e532e997afc200d801d48e7842f6628874b719fd3941de1360f</script>
+</div>
+<script src="/lib/blog-encrypt.js"></script><link href="/css/blog-encrypt.css" rel="stylesheet" type="text/css">
+    </div>
+
+    
+    
+    
+        <div id="wechat_subscriber" style="display: block; padding: 10px 0; margin: 20px auto; width: 100%; text-align: center;">
+  <img id="wechat_subscriber_qcode" src="/images/wechat-qcode.jpg" alt="崔靖奇 wechat" style="width: 200px; max-width: 100%;">
+  <div>欢迎您扫一扫上面的微信公众号，订阅我的博客！</div>
+</div>
+
+      
+        <div class="reward-container">
+  <div>坚持原创技术分享，您的支持将鼓励我继续创作！</div>
+  <button disable="enable" onclick="var qr = document.getElementById(&quot;qr&quot;); qr.style.display = (qr.style.display === 'none') ? 'block' : 'none';">
+    打赏
+  </button>
+  <div id="qr" style="display: none;">
+      
+      <div style="display: inline-block;">
+        <img src="/images/wechatpay.png" alt="崔靖奇 微信支付">
+        <p>微信支付</p>
+      </div>
+      
+      <div style="display: inline-block;">
+        <img src="/images/alipay.png" alt="崔靖奇 支付宝">
+        <p>支付宝</p>
+      </div>
+
+  </div>
+</div>
+
+        
+
+<div>
+<ul class="post-copyright">
+  <li class="post-copyright-author">
+    <strong>本文作者： </strong>崔靖奇
+  </li>
+  <li class="post-copyright-link">
+    <strong>本文链接：</strong>
+    <a href="http://coderdog.xyz/2019/10/20/hello-world/" title="Hello World">http://coderdog.xyz/2019/10/20/hello-world/</a>
+  </li>
+  <li class="post-copyright-license">
+    <strong>版权声明： </strong>本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/null" rel="noopener" target="_blank"><i class="fa fa-fw fa-creative-commons"></i>BY-NC-SA</a> 许可协议。转载请注明出处！
+  </li>
+</ul>
+</div>
+
+
+      <footer class="post-footer">
+          <div class="post-tags">
+              <a href="/tags/a/" rel="tag"><i class="fa fa-tag"> a</i></a>
+          </div>
+
+        
+
+      </footer>
+    
+  </article>
+  
+  
+  
+
+  </div>
+
+
+          </div>
+          
+    <div class="comments" id="comments"></div>
+
+        </div>
+          
+  
+  <div class="toggle sidebar-toggle">
+    <span class="toggle-line toggle-line-first"></span>
+    <span class="toggle-line toggle-line-middle"></span>
+    <span class="toggle-line toggle-line-last"></span>
+  </div>
+
+  <aside class="sidebar"  style="background-color:transparent;background: $whitesmoke;">
+    <div class="sidebar-inner">
+
+      <ul class="sidebar-nav motion-element">
+        <li class="sidebar-nav-toc">
+          文章目录
+        </li>
+        <li class="sidebar-nav-overview">
+          站点概览
+        </li>
+      </ul>
+
+      <!--noindex-->
+      <div class="post-toc-wrap sidebar-panel">
+      </div>
+      <!--/noindex-->
+
+      <div class="site-overview-wrap sidebar-panel">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+  <img class="site-author-image" itemprop="image" alt="崔靖奇"
+    src="/images/avatar.jpg">
+  <p class="site-author-name" itemprop="name">崔靖奇</p>
+  <div class="site-description" itemprop="description">在你还年轻的时候，你的选择没有对错之分，所有的选择都是对的，对于选择的结果，只是好与更好的差别。</div>
+</div>
+<div class="site-state-wrap motion-element">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+          <a href="/archives/">
+        
+          <span class="site-state-item-count">1</span>
+          <span class="site-state-item-name">日志</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-tags">
+            <a href="/tags/">
+          
+        <span class="site-state-item-count">1</span>
+        <span class="site-state-item-name">标签</span></a>
+      </div>
+  </nav>
+</div>
+  <div class="feed-link motion-element">
+    <a href="/atom.xml" rel="alternate">
+      <i class="fa fa-rss"></i>RSS
+    </a>
+  </div>
+  <div class="links-of-author motion-element">
+      <span class="links-of-author-item">
+        <a href="https://github.com/cuijingqi" title="GitHub &amp;rarr; https:&#x2F;&#x2F;github.com&#x2F;cuijingqi" rel="noopener" target="_blank"><i class="fa fa-fw fa-github"></i>GitHub</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="https://www.zhihu.com/people/cui-jing-qi-79/activities" title="知乎 &amp;rarr; https:&#x2F;&#x2F;www.zhihu.com&#x2F;people&#x2F;cui-jing-qi-79&#x2F;activities" rel="noopener" target="_blank"><i class="fa fa-fw fa-heart-o"></i>知乎</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="/cjq_wy@163.com" title="E-Mail &amp;rarr; cjq_wy@163.com"><i class="fa fa-fw fa-envelope"></i>E-Mail</a>
+      </span>
+  </div>
+
+
+
+      </div>
+	  
+	  <iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=298 height=52 src="//music.163.com/outchain/player?type=2&id=28228088&auto=0&height=32"></iframe>
+	 
+	 </div>
+  </aside>
+  <div id="sidebar-dimmer"></div>
+
+
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-inner">
+        
+
+<div class="copyright">
+  
+  &copy; 2016 – 
+  <span itemprop="copyrightYear">2019</span>
+  <span class="with-love">
+    <i class="fa fa-root"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">崔靖奇</span>
+
+
+</div>
+
+        
+<div class="busuanzi-count">
+  <script async src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+    <span class="post-meta-item" id="busuanzi_container_site_uv" style="display: none;">
+      <span class="post-meta-item-icon">
+        <i class="fa fa-user"></i>
+      </span>
+      <span class="site-uv" title="总访客量">
+        <span id="busuanzi_value_site_uv"></span>
+      </span>
+    </span>
+    <span class="post-meta-divider">|</span>
+    <span class="post-meta-item" id="busuanzi_container_site_pv" style="display: none;">
+      <span class="post-meta-item-icon">
+        <i class="fa fa-eye"></i>
+      </span>
+      <span class="site-pv" title="总访问量">
+        <span id="busuanzi_value_site_pv"></span>
+      </span>
+    </span>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+        
+      </div>
+    </footer>
+  </div>
+
+  
+  <script src="/lib/anime.min.js?v=3.1.0"></script>
+  <script src="//cdn.jsdelivr.net/npm/jquery@3/dist/jquery.min.js"></script>
+  <script src="//cdn.jsdelivr.net/gh/fancyapps/fancybox@3/dist/jquery.fancybox.min.js"></script>
+  <script src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+  <script src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+<script src="/js/utils.js?v=7.4.2"></script><script src="/js/motion.js?v=7.4.2"></script>
+<script src="/js/schemes/muse.js?v=7.4.2"></script>
+<script src="/js/next-boot.js?v=7.4.2"></script>
+
+  <script defer src="/lib/three/three.min.js"></script>
+    <script defer src="/lib/three/three-waves.min.js"></script>
+
+
+  
+
+
+
+
+
+
+  <script src="/js/local-search.js?v=7.4.2"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+  
+
+
+<script>
+NexT.utils.getScript('//unpkg.com/valine/dist/Valine.min.js', () => {
+  var GUEST = ['nick', 'mail', 'link'];
+  var guest = 'nick,mail,link';
+  guest = guest.split(',').filter(item => {
+    return GUEST.includes(item);
+  });
+  new Valine({
+    el: '#comments',
+    verify: false,
+    notify: true,
+    appId: 'NrMT3UdpLENTyXK4OBK2Lrw4-gzGzoHsz',
+    appKey: 'HKRjcXx0Xaxo3BRUuuVKdLFq',
+    placeholder: "才思泉涌，出口成章，切勿口吐芬芳。",
+    avatar: 'wavatar',
+    meta: guest,
+    pageSize: '10' || 10,
+    visitor: false,
+    lang: 'zh-cn' || 'zh-cn',
+    path: location.pathname,
+    recordIP: false,
+    serverURLs: ''
+  });
+}, window.Valine);
+</script>
+
+</body>
+</html>
