@@ -404,7 +404,7 @@
 
 </div>
   <div id="addthis" class="addthis_inline_share_toolbox">
-    
+    <script src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5db2a7f951f2e03a" async="async"></script>
   </div>
   <script>
 	function check() { 
@@ -421,12 +421,12 @@
 	};
     if(check()){
 		console.log("PC");
-		document.getElementById("addthis").innerHTML = "<script src=/"//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5db2a7f951f2e03a/" async=/"async/"></script>"; //显示
+		
 	}else{
 		console.log("NOPC");
-		document.getElementById("addthis").innerHTML = ""; //隐藏
+		document.getElementById("addthis").innerHTML = '';//隐藏
 	}
-   </script>
+	</script>
 
 
         
