@@ -283,15 +283,15 @@
 
       <div class="post-meta">
         <time itemprop="dateCreated"
-              datetime="2019-10-24T16:45:29+08:00"
-              content="2019-10-24">
-          10-24
+              datetime="2019-10-25T18:20:47+08:00"
+              content="2019-10-25">
+          10-25
         </time>
       </div>
 
       <h2 class="post-title">
-          <a class="post-title-link" href="/2019/10/24/20191024-World/" itemprop="url">
-            <span itemprop="name">World</span>
+          <a class="post-title-link" href="/2019/10/25/20191025-HEXO%E4%BC%98%E5%8C%96fork-me-on-github%E5%8F%8Aaddthis%E5%88%86%E4%BA%AB/" itemprop="url">
+            <span itemprop="name">HEXO优化fork me on github及addthis分享</span>
           </a>
       </h2>
 
@@ -399,11 +399,30 @@
   <span class="author" itemprop="copyrightHolder">崔靖奇</span>
 
 </div>
-<!--
-  <div class="addthis_inline_share_toolbox">
+  <div id="addthis" class="addthis_inline_share_toolbox">
     <script src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5db2a7f951f2e03a" async="async"></script>
   </div>
--->
+  <script>
+	function check() { 
+	  var userAgentInfo=navigator.userAgent; 
+	  var Agents =new Array("Android","iPhone","SymbianOS","Windows Phone","iPad","iPod"); 
+	  var flag=true; 
+	  for(var v=0;v<Agents.length;v++) { 
+		 if(userAgentInfo.indexOf(Agents[v])>0) { 
+		   flag=false; 
+		   break; 
+		 } 
+	   } 
+	   return flag; 
+	};
+    if(check()){
+		console.log("PC");
+		document.getElementById("addthis").style.display="";//显示
+	}else{
+		console.log("NOPC");
+		document.getElementById("addthis").style.display="none";//隐藏
+	}
+	</script>
 
 
         

@@ -399,11 +399,30 @@
   <span class="author" itemprop="copyrightHolder">崔靖奇</span>
 
 </div>
-<!--
-  <div class="addthis_inline_share_toolbox">
+  <div id="addthis" class="addthis_inline_share_toolbox">
     <script src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5db2a7f951f2e03a" async="async"></script>
   </div>
--->
+  <script>
+	function check() { 
+	  var userAgentInfo=navigator.userAgent; 
+	  var Agents =new Array("Android","iPhone","SymbianOS","Windows Phone","iPad","iPod"); 
+	  var flag=true; 
+	  for(var v=0;v<Agents.length;v++) { 
+		 if(userAgentInfo.indexOf(Agents[v])>0) { 
+		   flag=false; 
+		   break; 
+		 } 
+	   } 
+	   return flag; 
+	};
+    if(check()){
+		console.log("PC");
+		document.getElementById("addthis").style.display="";//显示
+	}else{
+		console.log("NOPC");
+		document.getElementById("addthis").style.display="none";//隐藏
+	}
+	</script>
 
 
         
