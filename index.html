@@ -455,10 +455,10 @@
 	};
     if(check()){
 		console.log("PC");
-		document.getElementById("addthis").style.display="";//显示
+		document.getElementById("addthis").setAttribute("disabled", "");//显示
 	}else{
 		console.log("NOPC");
-		document.getElementById("addthis").style.display="none";//隐藏
+		document.getElementById("addthis").setAttribute("disabled", "disabled");//隐藏
 	}
 	</script>
 
