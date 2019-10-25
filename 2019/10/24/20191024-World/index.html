@@ -162,15 +162,13 @@
 		 } 
 	   } 
 	   return flag; 
-	}
-	window.οnlοad=function (){
-		if(check()){
-			console.log("PC");
-			document.getElementById("forkMe").style.display="none";//隐藏
-		}else{
-			console.log("NOPC");
-			document.getElementById("forkMe").style.display="none";//显示
-		}
+	};
+    if(check()){
+		console.log("PC");
+		document.getElementById("forkMe").style.display="none";//隐藏
+	}else{
+		console.log("NOPC");
+		document.getElementById("forkMe").style.display="none";//显示
 	}
 	</script>
     <header class="header" itemscope itemtype="http://schema.org/WPHeader">
