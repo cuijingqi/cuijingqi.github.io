@@ -1,23 +1,2 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<svg
-   xmlns:dc="http://purl.org/dc/elements/1.1/"
-   xmlns:cc="http://creativecommons.org/ns#"
-   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-   xmlns:svg="http://www.w3.org/2000/svg"
-   xmlns="http://www.w3.org/2000/svg"
-   xml:space="preserve"
-   enable-background="new 0 0 512 512"
-   viewBox="0 0 512 512"
-   height="512px"
-   width="512px"
-   y="0px"
-   x="0px"
-   id="NexT"
-   version="1.1"><metadata
-     id="metadata3390"><rdf:RDF><cc:Work
-         rdf:about=""><dc:format>image/svg+xml</dc:format><dc:type
-           rdf:resource="http://purl.org/dc/dcmitype/StillImage" /><dc:title></dc:title></cc:Work></rdf:RDF></metadata><defs
-     id="defs3388" /><path
-     style="fill:#222222;fill-opacity:1"
-     id="path3384"
-     d="M 256.4,25.8 56.4,141.3 56,371.5 255.6,486.2 455.6,370.7 456,140.5 Z m 92.6,328.8 -18.4,10.7 -18.6,-11 0,0 -112,-142.3 0,142.6 -18.4,10.7 -18.6,-11 0,-197 18.5,-10.6 18.5,10.8 0,0 112,144.5 0,-144.6 18.5,-10.6 18.5,10.8 z" /></svg>
+<?xml version="1.0" standalone="no"?><!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd"><svg t="1571986564040" class="icon" viewBox="0 0 1188 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="3805" width="148.5" height="128" xmlns:xlink="http://www.w3.org/1999/xlink"><defs><style type="text/css">html, * { user-select: text !important; }
+</style></defs><path d="M1107.993019 0H78.631763C35.74171 0 0 35.74171 0 78.631763V750.575916c0 42.890052 35.74171 78.631763 78.631763 78.631763h484.300174v132.244328H307.378709c-17.870855 0-30.380454 14.296684-30.380454 30.380454 0 17.870855 14.296684 30.380454 30.380454 30.380453h573.65445c17.870855 0 30.380454-14.296684 30.380454-30.380453 0-17.870855-14.296684-30.380454-30.380454-30.380454H625.47993v-132.244328h482.513089c42.890052 0 78.631763-35.74171 78.631763-78.631763V78.631763C1188.411867 35.74171 1152.670157 0 1107.993019 0zM873.884817 362.77836H312.739965c-10.722513 0-19.657941-8.935428-19.657941-19.657941 0-10.722513 8.935428-19.657941 19.657941-19.657941h561.144852c10.722513 0 19.657941 8.935428 19.65794 19.657941 0 12.509599-8.935428 19.657941-19.65794 19.657941z" fill="#2c2c2c" p-id="3806"></path></svg>
