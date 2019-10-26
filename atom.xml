@@ -35,10 +35,14 @@
     </summary>
     
     
-      <category term="科技生活,aa" scheme="http://coderdog.xyz/categories/%E7%A7%91%E6%8A%80%E7%94%9F%E6%B4%BB-aa/"/>
+      <category term="科技生活" scheme="http://coderdog.xyz/categories/techlife/"/>
+    
+      <category term="aa" scheme="http://coderdog.xyz/categories/techlife/aa/"/>
     
     
-      <category term="hexo,手机端判断JS" scheme="http://coderdog.xyz/tags/hexo-%E6%89%8B%E6%9C%BA%E7%AB%AF%E5%88%A4%E6%96%ADJS/"/>
+      <category term="hexo" scheme="http://coderdog.xyz/tags/hexo/"/>
+    
+      <category term="手机端判断JS" scheme="http://coderdog.xyz/tags/%E6%89%8B%E6%9C%BA%E7%AB%AF%E5%88%A4%E6%96%ADJS/"/>
     
   </entry>
   
