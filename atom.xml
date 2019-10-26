@@ -42,9 +42,7 @@
       <category term="aa" scheme="http://coderdog.xyz/categories/aa/"/>
     
     
-      <category term="hexo" scheme="http://coderdog.xyz/tags/hexo/"/>
-    
-      <category term="手机端判断JS" scheme="http://coderdog.xyz/tags/%E6%89%8B%E6%9C%BA%E7%AB%AF%E5%88%A4%E6%96%ADJS/"/>
+      <category term="hexo,手机端判断JS" scheme="http://coderdog.xyz/tags/hexo-%E6%89%8B%E6%9C%BA%E7%AB%AF%E5%88%A4%E6%96%ADJS/"/>
     
   </entry>
   
