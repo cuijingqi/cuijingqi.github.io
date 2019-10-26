@@ -37,7 +37,9 @@
     
       <category term="科技生活" scheme="http://coderdog.xyz/categories/techlife/"/>
     
-      <category term="aa" scheme="http://coderdog.xyz/categories/techlife/aa/"/>
+      <category term="bb" scheme="http://coderdog.xyz/categories/techlife/bb/"/>
+    
+      <category term="aa" scheme="http://coderdog.xyz/categories/aa/"/>
     
     
       <category term="hexo" scheme="http://coderdog.xyz/tags/hexo/"/>
