@@ -3,14 +3,36 @@
   <entry>
     <title>HEXO优化fork me on github及addthis分享等关于手机端不显示</title>
     <url>//2019/10/26/HEXO%E4%BC%98%E5%8C%96fork-me-on-github%E5%8F%8Aaddthis%E5%88%86%E4%BA%AB%E7%AD%89%E5%85%B3%E4%BA%8E%E6%89%8B%E6%9C%BA%E7%AB%AF%E4%B8%8D%E6%98%BE%E7%A4%BA/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script>]]></content>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><p><strong>基于hexo使用next主题的关于手机端和电脑端区别显示的问题.</strong></p><ol>
+<li>优化hexo</li>
+</ol><ul>
+<li><ol>
+<li>添加fork me on github<br>点击<a href="https://github.com/blog/273-github-ribbons" target="_blank" rel="noopener">这里</a>或者<a href="http://tholman.com/github-corners/" target="_blank" rel="noopener">这里</a>挑选自己喜欢的样式,并复制代码.<br>然后粘贴刚才复制的代码到themes/next/layout/_layout.swig文件中(放在<code>&lt;div class=&quot;headband&quot;&gt;&lt;/div&gt;</code>的下面),并把href改为你的github地址.</li>
+</ol>
+</li>
+<li><ol start="2">
+<li>添加分享 AddThis<br>在网站 <a href="https://www.addthis.com" target="_blank" rel="noopener">AddThis</a> 上注册账号。 可以使用 Google/Facebook/Twitter 账号进行第三方登陆<br>创建相应的工具,生成代码块,复制<code>#pubid=</code>后的ID<br><img alt data-src="images/03.jpg"><br>在 主题配置文件 中,把#Share下的 #add_this_id取消注释,改为add_this_id: <code>ID</code>.  </li>
+</ol>
+</li>
+</ul><a id="more"></a>
+
+
+<ol start="2">
+<li>手机端不显示  </li>
+</ol>
+<ul>
+<li>1.主要代码<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line">  	&lt;script&gt;</span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">check</span>(<span class="params"></span>) </span>&#123; </span><br><span class="line">  <span class="keyword">var</span> userAgentInfo=navigator.userAgent; </span><br><span class="line">  <span class="keyword">var</span> Agents =<span class="keyword">new</span> <span class="built_in">Array</span>(<span class="string">"Android"</span>,<span class="string">"iPhone"</span>,<span class="string">"SymbianOS"</span>,<span class="string">"Windows Phone"</span>,<span class="string">"iPad"</span>,<span class="string">"iPod"</span>); </span><br><span class="line">  <span class="keyword">var</span> flag=<span class="literal">true</span>; </span><br><span class="line">  <span class="keyword">for</span>(<span class="keyword">var</span> v=<span class="number">0</span>;v&lt;Agents.length;v++) &#123; </span><br><span class="line">	 <span class="keyword">if</span>(userAgentInfo.indexOf(Agents[v])&gt;<span class="number">0</span>) &#123; </span><br><span class="line">	   flag=<span class="literal">false</span>; </span><br><span class="line">	   <span class="keyword">break</span>; </span><br><span class="line">	 &#125; </span><br><span class="line">   &#125; </span><br><span class="line">   <span class="keyword">return</span> flag; </span><br><span class="line">&#125;;</span><br><span class="line">   <span class="keyword">if</span>(check())&#123;</span><br><span class="line">	<span class="built_in">console</span>.log(<span class="string">"PC"</span>);</span><br><span class="line">	<span class="built_in">document</span>.getElementById(<span class="string">"需要隐藏的divID"</span>).style.display=<span class="string">""</span>;<span class="comment">//显示</span></span><br><span class="line">&#125;<span class="keyword">else</span>&#123;</span><br><span class="line">	<span class="built_in">console</span>.log(<span class="string">"NOPC"</span>);</span><br><span class="line">	<span class="built_in">document</span>.getElementById(<span class="string">"需要隐藏的divID"</span>).style.display=<span class="string">"none"</span>;<span class="comment">//隐藏</span></span><br><span class="line">&#125;</span><br><span class="line">&lt;<span class="regexp">/script&gt;</span></span><br></pre></td></tr></table></figure></li>
+<li>2.应用位置<br>fork me on github添加的路径themes/next/layout/_layout.swig,找到相关div下面粘贴上面代码,修改ID即可.<br>addthis由next集成,路径themes/next/layout/_partials/footer.swig中找到 <figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">id</span>=<span class="string">"addthis"</span> <span class="attr">class</span>=<span class="string">"addthis_inline_share_toolbox"</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br></pre></td></tr></table></figure>
+在下面粘贴主要代码,修改为需要隐藏的div的ID即可.<pre><code>hexo g -d
+hexo s</code></pre></li>
+</ul>
+<p><strong>以此类推,一切都可以这样做.</strong><br>3.演示<br><img alt data-src="images/01.jpg"><br><img alt data-src="/images/02.jpg"></p>
+]]></content>
       <categories>
         <category>科技生活</category>
-        <category>bb</category>
-        <category>aa</category>
       </categories>
       <tags>
-        <tag>hexo,手机端判断JS</tag>
+        <tag>hexo,JS判断手机端</tag>
       </tags>
   </entry>
 </search>
