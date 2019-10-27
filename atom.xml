@@ -42,7 +42,9 @@
       <category term="科技生活" scheme="http://coderdog.xyz/categories/techlife/"/>
     
     
-      <category term="hexo,JS判断手机端" scheme="http://coderdog.xyz/tags/hexo-JS%E5%88%A4%E6%96%AD%E6%89%8B%E6%9C%BA%E7%AB%AF/"/>
+      <category term="hexo" scheme="http://coderdog.xyz/tags/hexo/"/>
+    
+      <category term="JS判断手机端" scheme="http://coderdog.xyz/tags/JS%E5%88%A4%E6%96%AD%E6%89%8B%E6%9C%BA%E7%AB%AF/"/>
     
   </entry>
   
