@@ -67,13 +67,13 @@
   };
 </script>
 
-  <meta name="description" content="基于hexo使用next主题的关于手机端和电脑端区别显示的问题. 优化hexo   添加fork me on github点击这里或者这里挑选自己喜欢的样式,并复制代码.然后粘贴刚才复制的代码到themes&#x2F;next&#x2F;layout&#x2F;_layout.swig文件中(放在&amp;lt;div class=&amp;quot;headband&amp;quot;&amp;gt;&amp;lt;&#x2F;div&amp;gt;的下面),并把href改为你的g">
+  <meta name="description" content="基于hexo使用next主题的关于手机端和电脑端区别显示的问题.">
 <meta name="keywords" content="hexo,JS判断手机端">
 <meta property="og:type" content="article">
 <meta property="og:title" content="HEXO优化fork me on github及addthis分享等关于手机端不显示">
 <meta property="og:url" content="http:&#x2F;&#x2F;coderdog.xyz&#x2F;2019&#x2F;10&#x2F;26&#x2F;HEXO%E4%BC%98%E5%8C%96fork-me-on-github%E5%8F%8Aaddthis%E5%88%86%E4%BA%AB%E7%AD%89%E5%85%B3%E4%BA%8E%E6%89%8B%E6%9C%BA%E7%AB%AF%E4%B8%8D%E6%98%BE%E7%A4%BA&#x2F;index.html">
 <meta property="og:site_name" content="Coder 狗窝">
-<meta property="og:description" content="基于hexo使用next主题的关于手机端和电脑端区别显示的问题. 优化hexo   添加fork me on github点击这里或者这里挑选自己喜欢的样式,并复制代码.然后粘贴刚才复制的代码到themes&#x2F;next&#x2F;layout&#x2F;_layout.swig文件中(放在&amp;lt;div class=&amp;quot;headband&amp;quot;&amp;gt;&amp;lt;&#x2F;div&amp;gt;的下面),并把href改为你的g">
+<meta property="og:description" content="基于hexo使用next主题的关于手机端和电脑端区别显示的问题.">
 <meta property="og:locale" content="zh-CN">
 <meta property="og:image" content="http:&#x2F;&#x2F;coderdog.xyz&#x2F;2019&#x2F;10&#x2F;26&#x2F;HEXO%E4%BC%98%E5%8C%96fork-me-on-github%E5%8F%8Aaddthis%E5%88%86%E4%BA%AB%E7%AD%89%E5%85%B3%E4%BA%8E%E6%89%8B%E6%9C%BA%E7%AB%AF%E4%B8%8D%E6%98%BE%E7%A4%BA&#x2F;images&#x2F;03.jpg">
 <meta property="og:image" content="http:&#x2F;&#x2F;coderdog.xyz&#x2F;2019&#x2F;10&#x2F;26&#x2F;HEXO%E4%BC%98%E5%8C%96fork-me-on-github%E5%8F%8Aaddthis%E5%88%86%E4%BA%AB%E7%AD%89%E5%85%B3%E4%BA%8E%E6%89%8B%E6%9C%BA%E7%AB%AF%E4%B8%8D%E6%98%BE%E7%A4%BA&#x2F;images&#x2F;01.jpg">
@@ -260,7 +260,7 @@
     <span>0%</span>
   </div>
 
-		<div id="tp-weather-widget"></div>
+		<!--<div id="tp-weather-widget"></div>
 		<script>
 		  (function(a,h,g,f,e,d,c,b){b=function(){d=h.createElement(g);c=h.getElementsByTagName(g)[0];d.src=e;d.charset="utf-8";d.async=1;c.parentNode.insertBefore(d,c)};a["SeniverseWeatherWidgetObject"]=f;a[f]||(a[f]=function(){(a[f].q=a[f].q||[]).push(arguments)});a[f].l=+new Date();if(a.attachEvent){a.attachEvent("onload",b)}else{a.addEventListener("load",b,false)}}(window,document,"script","SeniverseWeatherWidget","//cdn.sencdn.com/widget2/static/js/bundle.js?t="+parseInt((new Date().getTime() / 100000000).toString(),10)));
 		  window.SeniverseWeatherWidget('show', {
@@ -281,7 +281,7 @@
 			console.log("NOPC");
 			document.getElementById("tp-weather-widget").style.display="none";//隐藏
 		}
-	  </script>
+	  </script>-->
     <main class="main">
       <div class="main-inner">
         <div class="content-wrap">
@@ -379,7 +379,8 @@
     <div class="post-body" itemprop="articleBody">
 
       
-        <p><strong>基于hexo使用next主题的关于手机端和电脑端区别显示的问题.</strong></p><ol>
+        <p><strong>基于hexo使用next主题的关于手机端和电脑端区别显示的问题.</strong></p><a id="more"></a>
+<ol>
 <li>优化hexo  <ul>
 <li>添加fork me on github<br>点击<a href="https://github.com/blog/273-github-ribbons" target="_blank" rel="noopener">这里</a>或者<a href="http://tholman.com/github-corners/" target="_blank" rel="noopener">这里</a>挑选自己喜欢的样式,并复制代码.<br>然后粘贴刚才复制的代码到themes/next/layout/_layout.swig文件中(放在<code>&lt;div class=&quot;headband&quot;&gt;&lt;/div&gt;</code>的下面),并把href改为你的github地址.</li>
 <li>添加分享 AddThis<br>在网站 <a href="https://www.addthis.com" target="_blank" rel="noopener">AddThis</a> 上注册账号。 可以使用 Google/Facebook/Twitter 账号进行第三方登陆<br>创建相应的工具,生成代码块,复制<code>#pubid=</code>后的ID<br><img alt data-src="images/03.jpg"><br>在 主题配置文件 中,把#Share下的 #add_this_id取消注释,改为add_this_id: <code>ID</code>.  </li>
@@ -393,9 +394,8 @@
 </li>
 </ul>
 </li>
-<li>演示<br><img alt data-src="images/01.jpg"><br><img alt data-src="images/02.jpg"></li>
-</ol><a id="more"></a>
-
+<li>演示<br> <img alt data-src="images/01.jpg"><br> <img alt data-src="images/02.jpg"></li>
+</ol>
 <p><strong>以此类推,一切都可以这样做.</strong>  </p>
 
     </div>
